@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh_CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title th:text="${USER.USER_NAME}"></title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/home.css" rel="stylesheet"/>
+</head>
+<body class="HOME_BODY">
+<div class="container-fluid">
+    <br>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 HOME_DIV">
+            <br>
+            <div class="row">
+                <div class="col-3">
+                    <img src="" class="HOME_IMG"
+                         th:src="'/PROFILE_PHOTO/' + ${USER.USER_PROFILE_PHOTO} + '/' + ${USER.USER_ID} + '.jpg'"
+                         alt="">
+                </div>
+                <div class="col-9">
+                    <h2 th:text="${USER.USER_NAME}"></h2>
+                    <hr>
+                    <ul class="HOME_UL">
+                        <li class="HOME_LI"><a href="#"><strong>0</strong><span>&nbsp动态</span></a></li>
+                        <li><a href="#"><strong>2</strong><span>&nbsp关注</span></a></li>
+                        <li><a href="#"><strong>0</strong><span>&nbsp粉丝</span></a></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <p>所在地区：</p>
+                    <p>社交网络：</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+</body>
+
+<script src="/js/jquery-3.6.3.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</html>
