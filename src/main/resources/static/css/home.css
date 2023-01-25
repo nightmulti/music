@@ -1,0 +1,41 @@
+.HOME_BODY {
+    background: #f5f5f5;
+}
+
+.HOME_DIV {
+    border: 1px solid #d5d5d5;
+    background: white;
+}
+
+.HOME_IMG {
+    display: block;
+    width: 180px;
+    height: 180px;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+}
+
+.HOME_UL {
+    padding-left: 0;
+}
+
+.HOME_LI {
+    border-left: 0;
+}
+
+li {
+    float: left;
+    padding: 0 10px 0 10px;
+    list-style: none;
+    border-left: 1px solid #ddd;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
